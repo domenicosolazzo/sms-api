@@ -1,7 +1,7 @@
 // Twilio tokens
 var ACCOUNT_SID = process.env.ACCOUNT_SID || 'ACxxxxx';
 var AUTH_TOKEN = process.env.AUTH_TOKEN || 'xxxxx';
-var NUMBER_FROM = process.env.NUMBER_FROM || '+1';
+var TWILIO_NUMBER = process.env.TWILIO_NUMBER || '+1';
 
 var client = require('twilio')(ACCOUNT_SID, AUTH_TOKEN);
 
@@ -15,7 +15,7 @@ var sendSms = function(req, res){
 
 	client.sendMessage({
 		to: numberTo,
-		from: NUMBER_FROM,
+		from: TWILIO_NUMBER,
 		body: message
 	}, function(err, responseData){
 		var result = {
