@@ -1,0 +1,35 @@
+{
+  "name": "sms-api",
+  "version": "1.0.0",
+  "description": "A simple api for sending sms",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.12.2",
+    "chai": "^2.2.0",
+    "express": "^4.12.3",
+    "mocha": "^2.2.1",
+    "twilio": "^1.11.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/domenicosolazzo/sms-api.git"
+  },
+  "keywords": [
+    "twilio",
+    "sms",
+    "webhooks",
+    "api"
+  ],
+  "author": "Domenico Solazzo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/domenicosolazzo/sms-api/issues"
+  },
+  "homepage": "https://github.com/domenicosolazzo/sms-api"
+}
